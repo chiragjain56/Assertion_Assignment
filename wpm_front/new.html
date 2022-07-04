@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate New Password</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+             <h1>
+                Generate New Password
+             </h1>
+        </div>
+   </header>
+   <section>
+        <div class="form">
+            <form method="post">
+                    <h3>Enter WebSite Name</h3>
+                    <div class="input-box">
+                        <input type="text" id="company">
+                        <input type="button" id="genBtn" value="Generate Password">
+                    </div>
+                    <div class="password-box">
+                        <p id="password">Generated password will be shown here</p>
+                    </div>
+                    <div class="buttons">
+                        <input type="button" id="save" value="Save">
+                        <input type="button" id="cancel" value="Cancel">
+                    </div>
+            </form>
+        </div>
+   </section>
+   <script type="module" src="./new.js"></script>
+</body>
+</html>

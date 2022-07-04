@@ -1,0 +1,31 @@
+.password-box{
+    border: 1px solid black;
+    margin: 1% 0;
+    text-align: center;
+}
+.password-box>p{
+    padding: 1%;
+    margin: 0;
+}
+.form{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    font-size: medium;
+    padding: 1%;
+}
+.input-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input[type=button]{
+    padding: 1% 4%;
+}
+#company{
+    flex: 2;
+    margin-right: 1%;
+}
