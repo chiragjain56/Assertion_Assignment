@@ -44,14 +44,14 @@ body{
 .hide{
      display: none;
 }
-.website-in{
+.website-in, .password-in{
      padding: 0;
      margin: 0;
      border: none;
      line-height: 2em;
      /* outline: ; */
 }
-#web-input{
+#web-input, #password-input{
      width: 99%;
      height: 80%;
      outline: none;

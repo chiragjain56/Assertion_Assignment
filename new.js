@@ -37,9 +37,13 @@ async function generatePassword() {
   return data;
 }
 
+var cancelText = "Cancel Bhai Cancel...";
 async function savePassword() {
   let companyName = document.getElementById("company").value;
   let password = document.getElementById("password").innerText;
+  if (password == cancelText) {
+    return;
+  }
   let data = {
     companyName: companyName,
     password: password,
@@ -49,10 +53,10 @@ async function savePassword() {
     "POST",
     JSON.stringify(data)
   );
-  console.log(res);
+  alert("Password saved for : " + companyName);
 }
 
 function cancel() {
   let p = document.getElementById("password");
-  p.innerText = "Cancel bhai Cancel...";
+  p.innerText = cancelText;
 }
